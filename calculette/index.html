@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <title>CALCULATRICE</title>
+</head>
+<body>
+    <h1>CALCULATRICE</h1>
+    <div class="calculatrice">
+        <div class="texte">
+            <img src="retour-arriere.png" alt="err_img" onclick="retour()">
+            <br>
+            <div id="request"></div>
+        </div>
+        <div class="boutons">
+            <table class="tableau">
+                <tr>
+                    <td class="C" onclick="ajout('C')">C</td>
+                    <td class="l-g" onclick="ajout('()')">()</td>
+                    <td class="l-g" onclick="ajout('%')">%</td>
+                    <td class="d-g" onclick="ajout('/')">/</td>
+                </tr>
+                <tr>
+                    <td onclick="ajout('7')">7</a></td>
+                    <td onclick="ajout('8')">8</a></td>
+                    <td onclick="ajout('9')">9</a></td>
+                    <td class="d-g" onclick="ajout('X')">X</td>
+                </tr>
+                <tr>
+                    <td onclick="ajout('4')">4</td>
+                    <td onclick="ajout('5')">5</td>
+                    <td onclick="ajout('6')">6</td>
+                    <td class="d-g" onclick="ajout('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="ajout('1')">1</td>
+                    <td onclick="ajout('2')">2</td>
+                    <td onclick="ajout('3')">3</td>
+                    <td class="d-g" onclick="ajout('+')">+</td>
+                </tr>
+                <tr>
+                    <td onclick="ajout('+/-')">+/-</td>
+                    <td onclick="ajout('0')">0</td>
+                    <td onclick="ajout(',')">,</td>
+                    <td class="equal" onclick="resolve('=')">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
